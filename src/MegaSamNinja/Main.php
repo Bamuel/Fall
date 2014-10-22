@@ -1,14 +1,4 @@
-//
-<?php
-/*
-__PocketMine Plugin__
-name=fall
-description=Teleports you to coords 100,1000,100
-version=1.0
-author=MegaSamNinja
-class=fall
-apiversion=12
-*/
+//*
 class Fall implements Plugin{
    private $api;
    
@@ -32,4 +22,5 @@ class Fall implements Plugin{
    public function __destruct(){
    }
 }
-//
+*//
+
