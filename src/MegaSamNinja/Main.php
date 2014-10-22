@@ -1,4 +1,4 @@
-//*
+/*
 class Fall implements Plugin{
    private $api;
    
@@ -10,7 +10,7 @@ class Fall implements Plugin{
     $this->api->console->register("fall", "Sends the person in space", array($this, "fall"));
     $this->api->ban->cmdwhitelist("fall");
     $this->path = $this->api->plugin->configPath($this);
-    $this->config = new Config($this->path . "Fall.yml", CONFIG_YAML, array("Jail" => "This will be used in a later version"));
+    $this->config = new Config($this->path . "Fall.yml", CONFIG_YAML, array("fall" => "This will be used in a later version"));
     }
      
     public function fall($cmd, $args, $issuer){
@@ -22,5 +22,5 @@ class Fall implements Plugin{
    public function __destruct(){
    }
 }
-*//
+*/
 
