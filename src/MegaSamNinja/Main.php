@@ -26,14 +26,13 @@ class Main extends PluginBase{
                $sender->teleport($surprise);
                $sender->sendMessage("You have been TELEPORTED by MAGIC");
                return true;
+               break;
    }
-               
-    
-    
-    
-    
-    
-    
+     else {
+         $sender->sendMessage("Please run command in game.");
+         $sender->sendMessage("Seriously do you think this plugin will work via Console");
+         return true;
+   }
     
 /*
 class Fall implements Plugin{
