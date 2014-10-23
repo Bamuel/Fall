@@ -20,9 +20,10 @@ class Main extends PluginBase{
     public function onCommand(CommandSender $sender, Command $command, $label, array $args){
         switch($command->getName()){
             case "fall":
+            if($sender instanceof Player) //thanks Falk
                $surprise = "100 1000 100";
-               $username = $issuer->username;
-               $username->teleport($surprise);//not sure this is correct
+               $sender->getName() //thanks Falk
+               $sender->teleport($surprise);
                $sender->sendMessage("You have been TELEPORTED by MAGIC");
                return true;
    }
