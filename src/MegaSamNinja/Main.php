@@ -14,7 +14,7 @@ class Main extends PluginBase{
     }
     
     public function onDisable(){
-        $this->getLogger()->info("You have disable THIS AWESOME CODE (FALL)");
+        $this->getLogger()->info("You have disable THIS AWESOME CODE FALL");
     }
     
     public function onCommand(CommandSender $sender, Command $command, $label, array $args){
