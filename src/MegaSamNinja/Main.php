@@ -28,10 +28,10 @@ class Main extends PluginBase{
                return true;
                break;
    }
-     else {
-         $sender->sendMessage("Please run command in game.");
-         $sender->sendMessage("Seriously do you think this plugin will work via Console");
-         return true;
+            else {
+               $sender->sendMessage("Please run command in game.");
+               $sender->sendMessage("Seriously do you think this plugin will work via Console");
+               return true;
    }
     
 /*
