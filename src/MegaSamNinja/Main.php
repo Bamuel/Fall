@@ -6,6 +6,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\ConsoleCommandSender;
 use pocketmine\plugin\PluginBase;
+use pocketmine\level\Position;
 
 class Main extends PluginBase{
     
