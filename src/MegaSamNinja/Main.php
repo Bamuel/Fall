@@ -1,3 +1,38 @@
+<?php
+
+namespace MegaSamNinja;
+
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
+use pocketmine\command\ConsoleCommandSender;
+use pocketmine\plugin\PluginBase;
+
+class Main extends PluginBase{
+    
+    public function onEnable(){
+        $this->getLogger()->info("Fall has been enabled.");
+    }
+    
+    public function onDisable(){
+        $this->getLogger()->info("You have disable THIS AWESOME CODE (FALL)");
+    }
+    
+    public function onCommand(CommandSender $sender, Command $command, $label, array $args){
+        switch($command->getName()){
+            case "fall":
+               $username = $issuer->username;
+               $username->teleport(100 1000 100);//not sure this is correct
+               $sender->sendMessage("You have been TELEPORTED by MAGIC");
+               return true;
+   }
+               
+    
+    
+    
+    
+    
+    
+    
 /*
 class Fall implements Plugin{
    private $api;
