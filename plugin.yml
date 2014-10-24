@@ -1,11 +1,10 @@
 name: Fall
 version: 1.0
 api: [1.0.0]
-author: [MegaSamNinja]
+author: MegaSamNinja
 description: Teleports you to coords 100,1000,100
-main: MegaSamNinja\Main
+main: megasamninja\fall\Main
 load: POSTWORLD
-website: N/A
 commands:
     fall:
       description: TOP SECRET FUN STUFF
