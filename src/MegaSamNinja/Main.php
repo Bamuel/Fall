@@ -23,7 +23,7 @@ class Main extends PluginBase{
             case "fall":
             if($sender instanceof Player) //thanks Falk
                $surprise = "100 1000 100";
-               $sender->getName() //thanks Falk
+               $sender->getName(); //thanks Falk
                $sender->teleport($surprise);
                $sender->sendMessage("You have been TELEPORTED by MAGIC");
                return true;
