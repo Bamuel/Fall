@@ -10,9 +10,18 @@ use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 
 class Main extends PluginBase implements CommandExecutor{
+    
+    public function onEnable() {
+    	@mkdir($this->getDataFolder());
+        $this->configFile = (new Config($this->getDataFolder()."config.yml", Config::YAML, array(
+            "Y-Axis" => "1000"
+        )))->getAll();
+        $this->getLogger()->info("Fall has been enabled.");
+    }
+    
     public function onCommand(CommandSender $sender, Command $command, $label, array $args){
         if($sender instanceof Player){
-           $sender->teleport(new Vector3(100, 1000, 100));
+           $sender->teleport(new Vector3(100, $this->configFile['Y-Axis'], 100));
            $sender->sendMessage("You have been TELEPORTED by MAGIC");
            return true;
         }
